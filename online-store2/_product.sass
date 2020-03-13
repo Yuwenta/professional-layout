@@ -1,0 +1,165 @@
+.catalog-product
+    display: flex
+    justify-content: space-between
+    margin-top: 59px
+    .sort
+        width: 243px;
+        &__details
+            &__summ
+                font-size: 14px
+                font-weight: bold
+                color: $color-site
+                line-height: 20px
+                text-transform: uppercase
+                border-left: 5px solid $color-site
+                border-bottom: 1px solid #ebebeb
+                line-height: 37px
+                margin-bottom: 18px
+                padding-left: 11px
+                width: 240px
+                display: flex
+                justify-content: space-between
+                &::-webkit-details-marker 
+                    display: none
+                &::after 
+                    content: '\f1b1'
+            .sort-ul
+                list-style: none
+                padding-left: 18px 
+                margin-bottom: 27px
+                &__li
+                    &__link
+                        font-size: 14px;
+                        color: #6f6e6e;;
+                        line-height: 33px;
+    &__box
+        width: 848px
+        display: flex
+        flex-direction: column
+        &__form
+            display: flex
+            flex-direction: column
+            .form-top
+                display: flex
+                justify-content: space-around
+                &__1,
+                &__2,
+                &__3
+                    width: 30%
+                &__ul
+                    list-style: none
+                    display: flex
+                    flex-wrap: wrap
+                    .form-treding__link
+                        font-size: 14px;
+                        color: #6f6e6e;
+                        line-height: 26px;
+                        &::after
+                            content: "|"
+                            color: #dfdfdf
+                            font-size: 14px
+                            margin-right: 10px
+                            margin-left: 10px
+                        &:hover
+                            color: $color-site
+                &__h3
+                    font-size: 14px;
+                    font-weight: bold
+                    color: #6f6e6e
+                    line-height: 37px
+                    text-transform: uppercase
+                    margin-bottom: 25px
+                &__2
+                    label
+                        font-size: 14px
+                        color: #6f6e6e
+                        line-height: 26px
+                        text-transform: uppercase
+                        margin-right: 27px
+
+            .form-bottom
+                display: flex
+                height: 50px
+                width: 848px
+                background-color: #f3f3f3
+                margin-top: 42px
+                margin-bottom: 48px
+                &__sortby,&__show
+                    display: flex
+                    align-items: center
+                    label
+                        height: 30px
+                        background-color: #ffffff
+                        border: 1px solid #ebebeb
+                        font-size: 14px;
+                        color: #6f6e6e;
+                        line-height: 30px;
+                        display: inline-block
+                        border-right: none
+                        padding-left: 13px
+                        width: 76px
+                        margin-left: 9px
+                    select
+                        height: 32px;
+                        background-color: #ffffff;
+                        border: 1px solid #ebebeb;
+                        font-size: 14px;
+                        color: #6f6e6e
+                        line-height: 32px
+                        border-left: none
+                        width: 76px
+                        display: inline-block
+                &__show
+                    label,select
+                        width: 59px
+                        border: 1px solid #ebebeb
+                        padding-left: 13px 
+
+.button-link-catalog
+    display: flex
+    justify-content: space-between
+    .pagination
+        height: 44px;
+        width: 261px;
+        background-color: #ffffff;
+        border: 1px solid #ebebeb;
+        border-radius: 3px;
+        .pages
+            list-style: none
+            display: flex
+            font-size: 16px;
+            font-weight: 300;
+            color: #c4c4c4;
+            line-height: 26px;
+            justify-content: space-around
+            .page
+                display: inline-block
+                padding: 8px
+                &:hover
+                    color: $color-site
+            .page__activ
+                color: $color-site
+
+.offer30-new
+    height: 341px;
+    background-color: #222224;
+    display: flex
+    justify-content: space-between
+    margin-top: 110px
+    align-items: center
+    .feture__offer-new
+        display: flex
+        flex-direction: column
+        width: 30%
+        align-items: center
+        .h3__feture__offer
+            text-align: center
+            margin: 25px 0 15px 0
+        .img__feture__offer
+            margin: 0
+        .p__feture__offer
+            text-align: center
+
+
+
+
