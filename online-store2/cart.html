@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/font-codes.css">
+    <link rel="stylesheet" href="css/font-embedded.css">
+    <link rel="stylesheet" href="css/font-ie7.css">
+    <link rel="stylesheet" href="css/font-ie7-codes.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+    <header class="header center">
+        <div class="header__left">
+            <a href="index.html" class="logo">
+                <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="D__logo">D</span>
+            </a>
+            <form action="" class="form__header">
+                    <details class="browse">
+                    <summary class=browse__summ>Browse</summary>
+                    <div class="drop">
+                        <div class="drop__col">
+                            <h3 class="drop__h3">Women</h3>
+                            <ul class="drop__ul">
+                                <li><a href="#" class="drop__a">Dresses</a></li>
+                                <li><a href="#" class="drop__a">Tops</a></li>
+                                <li><a href="#" class="drop__a">Sweaters/Knits</a></li>
+                                <li><a href="#" class="drop__a">Jackets/Coats</a></li>
+                                <li><a href="#" class="drop__a">Blazers</a></li>
+                                <li><a href="#" class="drop__a">Denim</a></li>
+                                <li><a href="#" class="drop__a">Leggings/Pants</a></li>
+                                <li><a href="#" class="drop__a">Skirts/Shorts</a></li>
+                                <li><a href="#" class="drop__a">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </details>
+                <input type="text" class="text__form" placeholder="Search for Item...">
+                <button class="button__form"><img src="img/search.png" alt="search"></button>
+            </form>
+        </div>
+        <div class="header__right">
+           <a class="a__cart" href="#"><img class="img__cart" src="img/cart.png" alt="cart"></a>
+           <a class="button" href="#">My account</a>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul class="menu center">
+            <li class="menu__list"><a href="index.html" class="menu__link">Home</a></li>
+            <li class="menu__list"><a href="product.html" class="menu__link">Man</a></li>
+            <li class="menu__list"><a href="product.html" class="menu__link">Women</a></li>
+            <li class="menu__list"><a href="product.html" class="menu__link">Kids</a></li>
+            <li class="menu__list"><a href="product.html" class="menu__link">Accoseriese</a></li>
+            <li class="menu__list"><a href="product.html" class="menu__link">Featured</a></li>
+            <li class="menu__list"><a href="product.html" class="menu__link">Hot Deals</a></li>
+        </ul>
+    </nav>
+    <div class="bc center">
+        <h3 class="bc__h3">New Arrivals</h3>
+        <nav>
+            <a href="index.html" class="bc__link">Home</a>
+            <a href="product.html" class="bc__link">Men</a>
+            <a href="#" class="bc__link bc__link_active">New Arrivals</a>
+        </nav>
+    </div>
+    <div class="center shopping-cart">
+        <table class="shopping-cart__table">
+            <tr>
+             <th class="th1">Product Details</th>
+             <th class="th1">unite Price</th>
+             <th class="th1">Quantity</th>
+             <th class="th1">shipping</th>
+             <th class="th1">Subtotal</th>
+             <th class="th1">ACTION</th>
+            </tr>
+            <tr>
+             <td>
+                 <div class="table__product">
+                     <a href="#" class="table__product__link"><img class="table__product__link__img" src="img/product11.png" alt="product"></a>
+                     <div class="table__product__info">
+                         <h3 class="table__product__info__h3">Mango People T-shirt</h3>
+                         <ul class="table__product__info__ul">
+                            <li>Color:  <span class="table-li-detail">Red</span></li>
+                            <li>Size:  <span class="table-li-detail">Xll</span> </li>
+                         </ul>
+                     </div>
+                 </div>
+             </td>
+             <td class="table__price">$150</td>
+             <td >
+                 <form class="Quantity">
+                     <input class="quantity__input" type="number" value="2" min="1">
+                 </form>
+             </td>
+             <td class="table__shipping">free</td>
+             <td class="subtotal">$300</td>
+             <td><a href="#" class="table__action"><i class="fa fa-times table__action__i"></i></a></td>
+           </tr>
+           <tr>
+            <td>
+                <div class="table__product">
+                    <a href="#" class="table__product__link"><img class="table__product__link__img" src="img/product22.png" alt="product"></a>
+                    <div class="table__product__info">
+                        <h3 class="table__product__info__h3">Mango People T-shirt</h3>
+                        <ul class="table__product__info__ul">
+                            <li>Color:  <span class="table-li-detail">Red</span></li>
+                            <li>Size:  <span class="table-li-detail">Xll</span> </li>
+                        </ul>
+                    </div>
+                </div>
+            </td>
+            <td class="table__price">$150</td>
+            <td >
+                <form class="Quantity">
+                    <input class="quantity__input" type="number" value="2" min="1">
+                </form>
+            </td>
+            <td class="table__shipping">free</td>
+            <td class="subtotal">$300</td>
+            <td><a href="#" class="table__action"><i class="fa fa-times table__action__i"></i></a></td>
+          </tr>
+          <tr>
+            <td>
+                <div class="table__product">
+                    <a href="#" class="table__product__link"><img class="table__product__link__img" src="img/product88.png" alt="product"></a>
+                    <div class="table__product__info">
+                        <h3 class="table__product__info__h3">Mango People T-shirt</h3>
+                        <ul class="table__product__info__ul">
+                            <li>Color:  <span class="table-li-detail">Red</span></li>
+                            <li>Size:  <span class="table-li-detail">Xll</span> </li>
+                        </ul>
+                    </div>
+                </div>
+            </td>
+            <td class="table__price">$150</td>
+            <td >
+                <form class="Quantity">
+                    <input class="quantity__input" type="number" value="2" min="1">
+                </form>
+            </td>
+            <td class="table__shipping">free</td>
+            <td class="subtotal">$300</td>
+            <td><a href="#" class="table__action"><i class="fa fa-times table__action__i"></i></a></td>
+          </tr>
+          </table>
+        
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer-top">
+        <div class="center content__footer-top">
+            <div class="footer-top-left">
+                <div class="photo__footer-top"><img src="img/face.png" alt="photo"></div>
+                <div>
+                <p class="text__footer-top">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                <p class="name__footer-top">Bin Burhan</p>
+                <p class="dhaka__footer-top">Dhaka, Bd</p>
+                </div>
+            </div>
+            <div class="footer-top-right">
+                <div class="content__footer-top__rigth">
+                    <h3 class="h3__footer-top__rigth">Subscribe</h3>
+                    <p class="p__footer-top__rigth">FOR OUR NEWLETTER AND PROMOTION</p>
+                <form class="footer__form">
+                    <input class="email__form" type="email" placeholder="Enter Your Email">
+                <a href="#" class="button button__footer__form">Subscribe</a>    
+                  </form>               
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom center">
+            <div class="footer-bottom__left">
+                <div class="logo__footer">
+                    <a href="#" class="logo">
+                        <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="D__logo">D</span>
+                    </a>
+                    <p class="p__footer-bottom__left">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.<br> <br> Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+                </div>
+            </div>
+            <div class="footer-bottom__rigth">
+                <article class="menu__footer-bottom">
+                    <h3 class="h3__footer-bottom">COMPANY</h3>
+                    <ul class="ul__footer-bottom">
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">Home</a></li>
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">Shop</a></li>
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">About</a></li>
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">How It Works</a></li>
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">Contact</a></li>
+                    </ul>
+                </article>
+                <article class="menu__footer-bottom">
+                    <h3 class="h3__footer-bottom">INFORMATION</h3>
+                    <ul class="ul__footer-bottom">
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">Tearms & Condition</a></li>
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">Privacy Policy</a></li>
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">How to Buy</a></li>
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">How to Sell</a></li>
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">Promotion</a></li>
+                    </ul>
+                </article>
+                <article class="menu__footer-bottom">
+                    <h3 class="h3__footer-bottom">SHOP CATEGORY</h3>
+                    <ul class="ul__footer-bottom">
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">Men</a></li>
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">Women</a></li>
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">Child</a></li>
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">Apparel</a></li>
+                        <li class="list__footer-bottom"><a href="#" class="link__footer-bottom">Brows All</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+        <div class="copy__footer">
+            <div class="content__copy__footer center">
+            <p class="p__copy__footer">© 2017 Brand All Rights Reserved.</p>
+            <div class="icon__copy__footer">
+                <a href="#" class="icon-facebook icon__footer"></a>
+                <a href="#" class="icon-twitter icon__footer"></a>
+                <a href="#" class="icon-linkedin icon__footer"></a>
+                <a href="#" class="icon-pinterest icon__footer"></a>
+                <a href="#" class="icon-gplus icon__footer"></a>
+            </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
