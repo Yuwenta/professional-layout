@@ -69,17 +69,16 @@
         </nav>
     </div>
     <div class="center shopping-cart">
-        <table class="shopping-cart__table">
-            <tr>
-             <th class="th1">Product Details</th>
-             <th class="th1">unite Price</th>
-             <th class="th1">Quantity</th>
-             <th class="th1">shipping</th>
-             <th class="th1">Subtotal</th>
-             <th class="th1">ACTION</th>
-            </tr>
-            <tr>
-             <td>
+        <div class="shopping-cart__table">
+            <div class="cart__name">
+                <div class="th1 th">Product Details</div>
+                <div class="th1">unite Price</div>
+                <div class="th1">Quantity</div>
+                <div class="th1">shipping</div>
+                <div class="th1">Subtotal</div>
+                <div class="th1">ACTION</div>
+            </div>
+            <div class="cart__table">
                  <div class="table__product">
                      <a href="#" class="table__product__link"><img class="table__product__link__img" src="img/product11.png" alt="product"></a>
                      <div class="table__product__info">
@@ -89,66 +88,94 @@
                             <li>Size:  <span class="table-li-detail">Xll</span> </li>
                          </ul>
                      </div>
-                 </div>
-             </td>
-             <td class="table__price">$150</td>
-             <td >
-                 <form class="Quantity">
-                     <input class="quantity__input" type="number" value="2" min="1">
-                 </form>
-             </td>
-             <td class="table__shipping">free</td>
-             <td class="subtotal">$300</td>
-             <td><a href="#" class="table__action"><i class="fa fa-times table__action__i"></i></a></td>
-           </tr>
-           <tr>
-            <td>
+                </div>
+             <div class="table__price">$150</div>
+             <div class="Quantity">
+                <form class="Quantity__form">
+                    <input class="Quantity__form__input" type="number" value="2" min="1">
+                </form>
+            </div>
+             <div class="table__shipping">free</div>
+             <div class="subtotal">$300</div>
+             <div class="table__action"><a href="#" class="table__action__button"><i class="fa fa-times table__action__button__i"></i></a></div>
+            </div>
+            <div class="cart__table">
                 <div class="table__product">
                     <a href="#" class="table__product__link"><img class="table__product__link__img" src="img/product22.png" alt="product"></a>
                     <div class="table__product__info">
                         <h3 class="table__product__info__h3">Mango People T-shirt</h3>
                         <ul class="table__product__info__ul">
-                            <li>Color:  <span class="table-li-detail">Red</span></li>
-                            <li>Size:  <span class="table-li-detail">Xll</span> </li>
+                           <li>Color:  <span class="table-li-detail">Red</span></li>
+                           <li>Size:  <span class="table-li-detail">Xll</span> </li>
                         </ul>
                     </div>
-                </div>
-            </td>
-            <td class="table__price">$150</td>
-            <td >
-                <form class="Quantity">
-                    <input class="quantity__input" type="number" value="2" min="1">
+               </div>
+            <div class="table__price">$150</div>
+            <div class="Quantity">
+                <form class="Quantity__form">
+                    <input class="Quantity__form__input" type="number" value="2" min="1">
                 </form>
-            </td>
-            <td class="table__shipping">free</td>
-            <td class="subtotal">$300</td>
-            <td><a href="#" class="table__action"><i class="fa fa-times table__action__i"></i></a></td>
-          </tr>
-          <tr>
-            <td>
+            </div>
+            <div class="table__shipping">free</div>
+            <div class="subtotal">$300</div>
+            <div class="table__action"><a href="#" class="table__action__button"><i class="fa fa-times table__action__button__i"></i></a></div>
+            </div>
+            <div class="cart__table">
                 <div class="table__product">
                     <a href="#" class="table__product__link"><img class="table__product__link__img" src="img/product88.png" alt="product"></a>
                     <div class="table__product__info">
                         <h3 class="table__product__info__h3">Mango People T-shirt</h3>
                         <ul class="table__product__info__ul">
-                            <li>Color:  <span class="table-li-detail">Red</span></li>
-                            <li>Size:  <span class="table-li-detail">Xll</span> </li>
+                           <li>Color:  <span class="table-li-detail">Red</span></li>
+                           <li>Size:  <span class="table-li-detail">Xll</span> </li>
                         </ul>
                     </div>
+               </div>
+                <div class="table__price">$150</div>
+                <div class="Quantity">
+                    <form class="Quantity__form">
+                        <input class="Quantity__form__input" type="number" value="2" min="1">
+                    </form>
                 </div>
-            </td>
-            <td class="table__price">$150</td>
-            <td >
-                <form class="Quantity">
-                    <input class="quantity__input" type="number" value="2" min="1">
+                <div class="table__shipping">free</div>
+                <div class="subtotal">$300</div>
+                <div class="table__action"><a href="#" class="table__action__button"><i class="fa fa-times table__action__button__i"></i></a></div>
+            </div>
+        </div>  
+        <div class="shopping-cart__buttons">
+            <div class="shopping-cart__buttons__1"><a href="#" class="shopping-cart__buttons__1__a">cLEAR SHOPPING CART</a></div>
+            <div class="shopping-cart__buttons__1"><a href="#" class="shopping-cart__buttons__1__a">cONTINUE sHOPPING</a></div>
+        </div>
+        <div class="adress-coupon-total">
+            <div class="adress-coupon-total__adress">
+                <form class="adress__form">
+                    <legend class="adress__form__name">Shipping Adress</legend>
+                    <select class="adress__form__country" required>
+                        <option>Bangladesh</option>
+                        <option>Russia</option>
+                        <option>USA</option>
+                        <option>France</option>
+                        <option>Germany</option>
+                    </select>
+                    <input type="text" class="state" placeholder="State">
+                    <input type="text" class="state" placeholder="Postcode / Zip">
+                    <button class="button-cart-form" type="submit">get a quote</button>
                 </form>
-            </td>
-            <td class="table__shipping">free</td>
-            <td class="subtotal">$300</td>
-            <td><a href="#" class="table__action"><i class="fa fa-times table__action__i"></i></a></td>
-          </tr>
-          </table>
-        
+            </div>
+            <div class="adress-coupon-total__coupon">
+                <form class="coupon__form">
+                    <legend class="coupon__form__name">coupon discount</legend>
+                    <p class="coupon__form__name__p">Enter your coupon code if you have one</p>
+                    <input type="text" class="state" placeholder="State">
+                    <button class="button-cart-form" type="submit">Apply coupon</button>
+                </form>
+            </div>
+            <div class="adress-coupon-total__total">
+                <p class="subtotal__p">Sub total    $900</p>
+                <p class="grandtotal__p">GRAND TOTAL    <span class="grandtotal__p__span">   $900</span></p>
+                <a class="button button-cart-total" href="#">proceed to checkout</a>
+            </div>
+        </div>
     </div>
 
     

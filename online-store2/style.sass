@@ -1,11 +1,14 @@
-@import "vars"
-@import "product"
-@import "cart"
 
+@import "vars"
 * 
     margin: 0
     padding: 0
 
+
+@import "product"
+@import "cart"
+
+    
 .center 
     padding: 0 calc(50% - 570px)
 
@@ -129,9 +132,8 @@ body
     margin-right: 26px
     overflow:hidden
     &:hover
-        -webkit-transform: scale(1.1)
-        -moz-transform: scale(1.1)
-        -o-transform: scale(1.1)
+        transform: scale(1.1)
+
 
 .text__form 
     display: inline-block
