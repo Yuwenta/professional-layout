@@ -641,10 +641,172 @@
   margin-bottom: 17px;
 }
 
+.shopping-cart .adress-coupon-total__total .grandtotal__p__span {
+  color: #f16d7f;
+}
+
 .shopping-cart .adress-coupon-total__total .button-cart-total {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
+  line-height: 50px;
+  height: 50px;
+}
+
+.checkout {
+  margin-top: 50px;
+}
+
+.checkout .shipping-adress__summ {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  line-height: 72px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.checkout .shipping-adress__summ::-webkit-details-marker {
+  display: none;
+}
+
+.checkout .shipping-adress__summ:hover {
+  color: #f16d7f;
+}
+
+.checkout .shipping-adress__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 80px;
+}
+
+.checkout .shipping-adress__content__left {
+  margin-right: 270px;
+}
+
+.shipping-adress__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 25px;
+  height: 370px;
+}
+
+.shipping-adress__form__h3 {
+  font-size: 13px;
+  color: #222222;
+  text-transform: uppercase;
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.shipping-adress__form__p {
+  font-size: 13px;
+  color: #b3b2b2;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.shipping-adress__form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shipping-adress__form__label {
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 10px;
+  line-height: 25px;
+}
+
+.shipping-adress__form__link {
+  font-size: 13px;
+  color: #b3b2b2;
+  line-height: 20px;
+}
+
+.shipping-adress__form__link:hover {
+  color: #222222;
+}
+
+.shipping-adress__form__button {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  height: 50px;
+  width: 180px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.shipping-adress__form__button:hover {
+  color: #f16d7f;
+  border-color: #f16d7f;
+}
+
+.shipping-adress__form__h4 {
+  font-size: 12px;
+  color: #222222;
+  line-height: 25px;
+}
+
+.shipping-adress__form__h4 .shipping-adress__s {
+  font-size: 17px;
+  color: #ff0d0d;
+}
+
+.shipping-adress__form__input-text {
+  height: 45px;
+  width: 390px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  margin-bottom: 15px;
+  text-indent: 20px;
+  line-height: 45px;
+  font-size: 20px;
+}
+
+.shipping-adress__form__input-text:hover {
+  border-color: #f16d7f;
+}
+
+.shipping-adress__form__ps {
+  font-size: 13px;
+  color: #ff0d0d;
+  line-height: 20px;
+}
+
+.shipping-adress__form__passwordforgot {
+  font-size: 14px;
+  color: #222222;
+  line-height: 20px;
+  margin-left: 30px;
+}
+
+.shipping-adress__form__passwordforgot:hover {
+  color: #f16d7f;
 }
 
 .center {

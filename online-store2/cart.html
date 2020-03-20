@@ -20,7 +20,7 @@
             <a href="index.html" class="logo">
                 <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="D__logo">D</span>
             </a>
-            <form action="" class="form__header">
+            <form class="form__header">
                     <details class="browse">
                     <summary class=browse__summ>Browse</summary>
                     <div class="drop">
@@ -149,13 +149,13 @@
         <div class="adress-coupon-total">
             <div class="adress-coupon-total__adress">
                 <form class="adress__form">
-                    <legend class="adress__form__name">Shipping Adress</legend>
-                    <select class="adress__form__country" required>
-                        <option>Bangladesh</option>
-                        <option>Russia</option>
-                        <option>USA</option>
-                        <option>France</option>
-                        <option>Germany</option>
+                    <h3 class="adress__form__name">Shipping Adress</h3>
+                    <select class="adress__form__country">
+                        <option disabled selected value="Bangladesh">Bangladesh</option>
+                        <option value="Russia">Russia</option>
+                        <option value="USA">USA</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
                     </select>
                     <input type="text" class="state" placeholder="State">
                     <input type="text" class="state" placeholder="Postcode / Zip">
@@ -164,7 +164,7 @@
             </div>
             <div class="adress-coupon-total__coupon">
                 <form class="coupon__form">
-                    <legend class="coupon__form__name">coupon discount</legend>
+                    <h3 class="coupon__form__name">coupon discount</h3>
                     <p class="coupon__form__name__p">Enter your coupon code if you have one</p>
                     <input type="text" class="state" placeholder="State">
                     <button class="button-cart-form" type="submit">Apply coupon</button>
