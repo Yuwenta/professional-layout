@@ -1,0 +1,626 @@
+@import "vars"
+@import "product"
+@import "cart"
+
+* 
+    margin: 0
+    padding: 0
+
+.center 
+    padding: 0 calc(50% - 570px)
+
+a 
+    text-decoration: none
+
+body 
+    font-family: 'Lato'
+
+.header 
+    height: 100px
+    background-color: #ffffff
+    border: 1px solid #ececec
+    box-shadow: 0px 0px 10px 0px #ececec
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+.header__left,
+.header__right,
+.form__header 
+    display: flex
+    align-items: center
+
+.logo 
+    display: flex
+    align-items: center
+    font-size: 27px
+    font-weight: 300
+    color: #222222
+    text-align: center
+    letter-spacing: 0.03em
+    text-transform: uppercase
+
+.D__logo 
+    color: $color-site
+
+.logo__img 
+    margin-right: 13px
+
+.browse 
+    margin-left: 37px
+    font-size: 14px
+    font-weight: 300
+    color: #222222
+    letter-spacing: 0.03em
+    border: 1px solid #e6e6e6
+    background: linear-gradient(to bottom, #f9f9f9, 
+    #f5f5f5)
+    display: flex
+    height: 36px
+    width: 87px
+    line-height: 38px
+    justify-content: center
+    position: relative
+
+
+
+.browse[open] .drop 
+    display: flex
+    z-index: 1
+
+.browse__summ 
+    display: flex
+    justify-content: center
+    &::-webkit-details-marker 
+        display: none
+    &::after 
+        content: '\f1b1'
+        padding-left: 5px
+  
+.drop 
+    position: absolute
+    background-color: #ffffff
+    border-radius: 5px
+    padding: 20px
+    display: none
+    top: 48px
+
+
+.drop_last 
+    right: 0
+
+
+.drop__col 
+    margin-right: 46px
+
+
+.drop__col:last-of-type 
+    margin-right: 0
+
+
+.drop__h3 
+    font-size: 14px
+    color: #232323
+    letter-spacing: 0.03em
+    line-height: 32px
+    text-transform: uppercase
+    border-bottom: 1px solid #e8e8e8
+    margin-bottom: 8px
+    width: 234px
+
+
+.drop__ul 
+    list-style: none
+
+
+.drop__a 
+    font-size: 14px
+    color: #646464
+    letter-spacing: 0.03em
+    line-height: 28px
+
+
+.drop__a:hover 
+    color: $color-site
+
+
+.img__cart 
+    margin-right: 26px
+    overflow:hidden
+    &:hover
+        -webkit-transform: scale(1.1)
+        -moz-transform: scale(1.1)
+        -o-transform: scale(1.1)
+
+.text__form 
+    display: inline-block
+    height: 36px
+    width: 280px
+    border: 1px solid #e6e6e6
+    border-left: none
+    font-size: 14px
+    font-weight: 300
+    color: #a4a4a4
+    letter-spacing: 0.03em
+    text-indent: 16px
+
+.button__form 
+    display: flex
+    height: 38px
+    width: 38px
+    border: 1px solid #e6e6e6
+    border-left: none
+    background: none
+    justify-content: center
+    align-items: center
+    &:hover 
+            border: 1px solid black
+
+.button 
+    display: inline-flex
+    height: 38px
+    background-color: $color-site
+    color: white
+    font-size: 15px
+    color: #ffffff
+    letter-spacing: 0.03em
+    line-height: 38px
+    justify-content: center
+    border: 1px solid #ececec
+    box-shadow: 0px 0px 10px 0px #ececec
+    border-radius: 3px
+    padding: 0px 20px
+    &:hover
+        background-color: white
+        color:  $color-site
+        border: 1px solid  $color-site
+
+.nav 
+    height: 52px
+
+.menu 
+    list-style-type: none
+    display: flex
+    justify-content: center
+    &__link 
+        padding: 16px
+        display: inline-block
+        font-size: 14px
+        font-weight: bold
+        color: #222222
+        text-transform: uppercase
+        &:hover 
+            border-bottom: 3px solid $color-site
+
+.bc
+  height: 148px
+  background-color: #f8f3f4
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__h3 
+    font-size: 24px
+    font-weight: 900
+    color: $color-site
+    text-align: center
+    line-height: 20px
+    text-transform: uppercase
+  &__link
+    font-size: 14px
+    font-weight: normal
+    color: #636363
+    text-align: center
+    line-height: 20px
+    text-transform: uppercase
+    &:not(:last-child):after
+      content: '/'
+      display: inline-block
+      margin-right: 5px
+      margin-left: 5px
+    &:hover
+      color: $color-site
+    &_active
+      color: $color-site
+      font-weight: bold
+
+
+.promo 
+    height: 614px
+    background-color: #e8e8e8
+    background-image: url(img/promo.png)
+    background-repeat: no-repeat
+    background-position: center -51px
+    &__content 
+        margin-top: 225px
+        float: left
+        border-left: 12px solid $color-site
+        text-indent: 12px
+    &__h1
+        font-size: 60px
+        font-weight: 900
+        color: #222222
+        letter-spacing: 0.03em
+        line-height: 45px
+        margin-bottom: 12px
+    &__h2
+        font-size: 40px
+        font-weight: 900
+        color: #222222
+        letter-spacing: 0.03em
+        line-height: 33px
+
+.FASHION__h2
+    color: $color-site
+
+.clear
+    clear: both
+
+.banner 
+    display: flex
+    justify-content: space-between
+    margin-top: 98px
+
+.banner__left,
+.banner__rigth 
+    display: flex
+    height: 823px
+    width: 560px
+    flex-direction: column
+    justify-content: space-between
+
+.banner1 
+    height: 542px
+    width: 560px
+    background-image: url(img/banner1.png)
+
+.banner2 
+    height: 261px
+    width: 560px
+    background-image: url(img/banner2.png)
+
+.banner3 
+    height: 261px
+    width: 560px
+    background-image: url(img/banner3.png)
+
+.banner4 
+    height: 542px
+    width: 560px
+    background-image: url(img/banner4.png)
+
+.content__banner 
+    background-color: white
+    padding: 16px 20px
+    display: inline-block
+    margin-top: 26px
+
+.banner__h3 
+    font-size: 18px
+    font-weight: 900
+    color: #222222
+    letter-spacing: 0.03em
+    text-transform: uppercase
+
+.banner__h4 
+    font-size: 30px
+    font-weight: 900
+    color: $color-site
+    letter-spacing: 0.03em
+    text-transform: uppercase
+
+
+.h2__product 
+    font-size: 30px
+    font-weight: bold
+    color: #222222
+    text-align: center
+    letter-spacing: 0.03em
+    margin-bottom: 16px
+    margin-top: 100px
+
+.h3__product 
+    font-size: 14px
+    color: #9f9f9f
+    text-align: center
+    letter-spacing: 0.03em
+    margin-bottom: 60px
+
+.product 
+    width: 263px
+    margin-bottom: 39px
+    position: relative
+
+
+.product-box 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+
+.product:hover 
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+
+
+.product:hover .product__img 
+    filter: brightness(40%)
+
+
+.product:hover .product__add 
+    display: flex
+
+
+.product__content 
+    padding: 16px
+
+
+.product__img 
+    width: 100%
+
+
+.product__name 
+    font-size: 13px
+    color: #222222
+    text-transform: uppercase
+
+
+.product__price 
+    font-size: 16px
+    font-weight: bold
+    color: $color-site
+    text-transform: uppercase
+    margin-top: 16px
+
+
+.product__add 
+    font-size: 13px
+    font-weight: bold
+    color: #ffffff
+    height: 39px
+    width: 123px
+    border: 1px solid #ffffff
+    display: none
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 97px
+    left: 70px
+
+
+.product__add:hover 
+    box-shadow: 0 0 6px #fff
+
+.button__product 
+    display: flex
+    justify-content: center
+
+.offer30 
+    display: flex
+    height: 529px
+    margin-top: 113px
+
+.banner__offer 
+    width: 767px
+    background-image: url(img/banneroffer30.png), url(img/offer.png)
+
+
+.feture__offer30 
+    width: 373px
+    background-color: #222224
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+
+.h2__banner__offer 
+    font-size: 54px
+    font-weight: bold
+    color: #ffffff
+    letter-spacing: 0.03em
+
+.offer_red 
+    color: $color-site
+
+.img__feture__offer 
+    margin-right: 33px
+
+.p__banner__offer 
+    font-size: 32px
+    font-weight: bold
+    color: #ffffff
+    letter-spacing: 0.03em
+
+.h3__feture__offer 
+    font-size: 20px
+    font-weight: bold
+    color: #fbfbfb
+    letter-spacing: 0.03em
+    margin-bottom: 17px
+
+.p__feture__offer 
+    font-size: 14px
+    font-weight: 300
+    color: #fbfbfb
+    line-height: 24px
+
+.content__offer 
+    display: inline-block
+    margin-top: 140px
+    margin-left: 39px
+
+.feture__offer 
+    display: flex
+    width: 300px
+    justify-content: space-between
+
+
+.footer-top 
+    height: 438px
+    background-image: url(img/footer-back.png), url(img/2196.png)
+    background-blend-mode: overlay
+    margin-top: 97px
+    .content__footer-top 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 438px
+
+.text__footer-top
+    font-size: 16px
+    font-style: italic
+    color: #222224
+    letter-spacing: 0.03em
+    line-height: 26px
+    display: inline-block
+    width: 400px
+
+
+.footer-top-left 
+    display: flex
+
+
+.photo__footer-top 
+    margin-right: 28px
+
+
+.name__footer-top 
+    font-size: 16px
+    font-weight: bold
+    color: $color-site
+    letter-spacing: 0.03em
+    margin-top: 20px
+
+.dhaka__footer-top 
+    font-size: 12px
+    font-weight: 300
+    color: #222224
+    letter-spacing: 0.03em
+    line-height: 14px
+
+.h3__footer-top__rigth 
+    font-size: 24px
+    color: #222224
+    text-align: center
+    letter-spacing: 0.03em
+    text-transform: uppercase
+
+.p__footer-top__rigth 
+    font-size: 14px
+    color: #222224
+    text-align: center
+    letter-spacing: 0.03em
+
+
+.email__form 
+    height: 46px
+    width: 282px
+    background-color: #e1e1e1
+    border-top-left-radius: 23px
+    border-bottom-left-radius: 23px
+    border: none
+    text-indent: 28px
+
+
+.button__footer__form 
+    height: 46px
+    width: 104px
+    background-color: $color-site
+    border-radius: 0px 23px 23px 0px
+    font-size: 14px
+    color: #ffffff
+    text-align: center
+    letter-spacing: 0.03em
+    line-height: 46px
+    box-shadow: none
+
+.footer__form 
+    display: flex
+    align-items: center
+    margin-top: 35px
+
+.footer-bottom 
+    display: flex
+    align-items: center
+    height: 458px
+
+
+.p__footer-bottom__left 
+    width: 430px
+    font-size: 14px
+    font-weight: 300
+    color: #898989
+    letter-spacing: 0.03em
+    line-height: 24px
+    margin-top: 29px
+
+.footer-bottom__rigth 
+    display: flex
+    justify-content: space-around
+
+.menu__footer-bottom 
+    display: inline-block
+    margin-left: 61px
+    margin-right: 20px
+
+
+
+.h3__footer-bottom 
+    font-size: 18px
+    font-weight: bold
+    color: $color-site
+    letter-spacing: 0.03em
+    line-height: 26px
+    margin-bottom: 40px
+    text-indent: 0
+
+
+.link__footer-bottom 
+    font-size: 16px
+    color: #898989
+    letter-spacing: 0.03em
+    line-height: 42px
+
+
+.link__footer-bottom:hover 
+    color: #222222
+
+
+.ul__footer-bottom 
+    list-style-type: none
+
+.copy__footer 
+    height: 79px
+    background-color: #e6e6e6
+
+.content__copy__footer 
+    height: 79px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.p__copy__footer 
+    font-size: 16px
+    color: #7a7a7a
+    letter-spacing: 0.03em
+    height: 25px
+    display: inline-block
+
+
+.icon__footer 
+    display: flex
+    height: 32px
+    width: 32px
+    background-color: white
+    color: #b2b2b2
+    font-size: 16px
+    margin-left: 8px
+    justify-content: center
+    align-items: center
+    &:hover
+        background-color: $color-site
+        color: white
+
+.icon__copy__footer
+    display: flex
+ 
+    

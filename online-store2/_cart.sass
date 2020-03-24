@@ -1,0 +1,70 @@
+
+.shopping-cart
+    margin-top: 80px
+    &__table
+        text-align: center
+        .th1
+            font-size: 13px;
+            font-weight: bold;
+            color: #222222;
+            letter-spacing: -0.01em;
+            line-height: 20px;
+            text-transform: uppercase;
+        .table__product
+            display: flex
+
+            &__linc
+                display: block
+                &__img
+                    height: 115px;
+                    width: 100px;
+                    display: inline-block
+            &__info
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                text-align: left
+                &__h3
+                    font-size: 13px;
+                    color: #222222;
+                    text-transform: uppercase;
+                    margin-left: 20px
+                &__ul
+                    list-style: none
+                    margin-left: 20px
+                    li
+                        font-size: 13px
+                        color: #575757
+                        line-height: 20px
+                        .table-li-detail
+                            font-weight: 300
+                            color: #6f6e6e
+        .table__price, .table__shipping,.subtotal
+            font-size: 13px;
+            color: #656565;
+            line-height: 20px;
+            text-transform: uppercase
+        .quantity
+            &__input
+                height: 30px
+                width: 54px
+                text-indent: 20px
+        .table__action
+            border: 1px solid #c0c0c0
+            height: 16px
+            width: 16px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            background-color:#c0c0c0
+            &:hover
+                background-color: #f16d7f
+
+            &__i
+                font-size: 12px;
+                color: white
+                line-height: 16px
+
+
+
