@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Single</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/animation.css">
@@ -19,7 +19,7 @@
     <div class="top">
     <header class="header center">
         <div class="header__left">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="D__logo">D</span>
             </a>
             <form class="form__header">
@@ -96,151 +96,107 @@
             <li class="menu__list"><a href="product.html" class="menu__link">Hot Deals</a></li>
         </ul>
     </nav>
-    <div class="promo center">
-        <div class="promo__content">
-            <h1 class="promo__h1">THE BRAND</h1>
-            <h2 class="promo__h2">OF LUXERIOUS <span class="FASHION__h2">FASHION</span></h2>
-        </div>
-    </div>
-    <div class="clear">
+    <div class="bc center">
+        <h3 class="bc__h3">New Arrivals</h3>
+        <nav>
+            <a href="index.html" class="bc__link">Home</a>
+            <a href="product.html" class="bc__link">Men</a>
+            <a href="#" class="bc__link bc__link_active">New Arrivals</a>
+        </nav>
     </div>
 
-    <div class="banner center">
-    <div class="banner__left">
-        <div class="banner1">
-            <div class="content__banner">
-                <h3 class="banner__h3">HOT DEAL</h3>
-                <h4 class="banner__h4">FOR MEN</h4>
-            </div>
-        </div>
-        <div class="banner2">
-            <div class="content__banner">
-                <h3 class="banner__h3">LUXIROUS & trendy</h3>
-                <h4 class="banner__h4">ACCESORIES</h4>
-            </div>
-        </div>
+    <div class="single-product">
+        <a href="#" class="single-button"><i class="fa fa-angle-left"></i></a>
+        <a href="img/single-product.png" class="single-product__link"><img class="single-product__link__img" src="img/single-product.png" alt="product"></a>
+        <a href="#" class="single-button"><i class="fa fa-angle-right"></i></a>
     </div>
-    <div class="banner__rigth">
-        <div class="banner3">
-            <div class="content__banner">
-                <h3 class="banner__h3">30% offer</h3>
-                <h4 class="banner__h4">women</h4>
+    <div class="single-content">
+        <div class="single-content__info">
+            <div class="single-content__info__h2">
+                <a href="product.html" class="single-content__info__women">WOMEN COLLECTION</a>
             </div>
-        </div>
-        <div class="banner4">
-            <div class="content__banner">
-                <h3 class="banner__h3">new arrivals</h3>
-                <h4 class="banner__h4">FOR kids</h4>
+            <div class="sigle-content__line"></div>
+            <h3 class="single-content__info__h3">Moschino Cheap And Chic</h3>
+            <p class="single-content__info__star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+            <p class="single-content__info__p">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+            <div class="single-content__info__block">
+                <p class="single-content__info__block__2">MATERIAL: <span class="single-span">COTTON</span></p>
+                <p class="single-content__info__block__2">DESIGNER: <span class="single-span">BINBURHAN</span></p>
             </div>
+            <p class="single-content__info__price">$561</p>
         </div>
+        <form class="single-content__form">
+            <div class="choose">
+            <div class="choose__block">
+                <label for="choose-color" class="choose__label">CHOOSE COLOR</label>
+                <select id="choose-color" class="choose__select" name="choose-color">
+                    <option selected value="red"><i class="square-red fa fa-square"></i>RED</option>
+                    <option value="black"><i class="square-black fa fa-square"></i>BLACK</option>
+                </select>
+            </div>
+            <div class="choose__block">
+                <label for="choose-size" class="choose__label">CHOOSE SIZE</label>
+                <select id="choose-size" class="choose__select" name="choose-size">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option selected value="XXL">XXL</option>
+                </select>
+            </div>
+            <div class="choose__block">
+                <label for="choose-quantity" class="choose__label">QUANTITY</label>
+                <input class="choose__select choose-input" type="number" min="1" value="2">
+            </div>
+            </div>
+            <a href="" class="single-content__form__button"><img src="img/red-cart.png" alt="red-cart" class="single-red-cart">Add to Cart</a>
+
+        </form>
     </div>
-    </div>
-    <section class="Fetured center">
-        <h2 class="h2__product">Fetured Items</h2>
-        <h3 class="h3__product">Shop for items based on what we featured in this week</h3>
-    
+
+    <section class="product-also">
+    <h3 class="product-also__name">you may like also</h3>
     <div class="product-box center">
-        <div class="product">
-            <a href="#"><img class="product__img" src="img/fetured1.png" alt="photo product"></a>
+        
+        <div class="product single__product-also">
+            <a class="single_product" href="#"><img class="product__img-single" src="img/single-also1.png" alt="photo product"></a>
             <div class="product__content">
-                <a href="#" class="product__name">Mango People T-shirt</a>
+                <a href="#" class="product__name-single">BLAZE LEGGINGS</a>
                 <p class="product__price">$52.00</p>
             </div>
             <a href="#" class="product__add">Add to Cart</a>
         </div>
         <div class="product">
-            <a href="#"><img class="product__img" src="img/fetured2.png" alt="photo product"></a>
+            <a class="single_product" href="#"><img class="product__img-single" src="img/single-also2.png" alt="photo product"></a>
             <div class="product__content">
-                <a href="#" class="product__name">Mango People T-shirt</a>
+                <a href="#" class="product__name-single">ALEXA SWEATER</a>
                 <p class="product__price">$52.00</p>
             </div>
             <a href="#" class="product__add">Add to Cart</a>
         </div>
         <div class="product">
-            <a href="#"><img class="product__img" src="img/fetured3.png" alt="photo product"></a>
+            <a class="single_product" href="#"><img class="product__img-single" src="img/single-also3.png" alt="photo product"></a>
             <div class="product__content">
-                <a href="#" class="product__name">Mango People T-shirt</a>
+                <a href="#" class="product__name-single">AGNES TOP</a>
                 <p class="product__price">$52.00</p>
             </div>
             <a href="#" class="product__add">Add to Cart</a>
         </div>
         <div class="product">
-            <a href="#"><img class="product__img" src="img/fetured4.png" alt="photo product"></a>
+            <a class="single_product" href="#"><img class="product__img-single" src="img/single-also4.png" alt="photo product"></a>
             <div class="product__content">
-                <a href="#" class="product__name">Mango People T-shirt</a>
+                <a href="#" class="product__name-single">SYLVA SWEATER</a>
                 <p class="product__price">$52.00</p>
             </div>
             <a href="#" class="product__add">Add to Cart</a>
         </div>
-        <div class="product">
-            <a href="#"><img class="product__img" src="img/fetured5.png" alt="photo product"></a>
-            <div class="product__content">
-                <a href="#" class="product__name">Mango People T-shirt</a>
-                <p class="product__price">$52.00</p>
-            </div>
-            <a href="#" class="product__add">Add to Cart</a>
+    
         </div>
-        <div class="product">
-            <a href="#"><img class="product__img" src="img/fetured6.png" alt="photo product"></a>
-            <div class="product__content">
-                <a href="#" class="product__name">Mango People T-shirt</a>
-                <p class="product__price">$52.00</p>
-            </div>
-            <a href="#" class="product__add">Add to Cart</a>
-        </div>
-        <div class="product">
-            <a href="#"><img class="product__img" src="img/fetured7.png" alt="photo product"></a>
-            <div class="product__content">
-                <a href="#" class="product__name">Mango People T-shirt</a>
-                <p class="product__price">$52.00</p>
-            </div>
-            <a href="#" class="product__add">Add to Cart</a>
-        </div>
-        <div class="product">
-            <a href="#"><img class="product__img" src="img/fetured8.png" alt="photo product"></a>
-            <div class="product__content">
-                <a href="#" class="product__name">Mango People T-shirt</a>
-                <p class="product__price">$52.00</p>
-            </div>
-            <a href="#" class="product__add">Add to Cart</a>
-        </div>
-        </div>
-        <div class="button__product">
-        <a class="button" href="#">Browse All Product</a>
-        </div>
-    </section>
-    <section class="offer30 center">
-        <div class="banner__offer">
-                <div class="content__offer">
-                    <h2 class="h2__banner__offer">30% <span class="offer_red">OFFER</span></h2>
-                    <p class="p__banner__offer">FOR WOMEN</p>      
-               </div>
-        </div>
-        <div class="feture__offer30">
-                <article class="feture__offer">
-                    <div class="img__feture__offer"><img src="img/delivery.png" alt="delivery"></div>
-                    <div class="content__feture__offer">
-                        <h3 class="h3__feture__offer">Free Delivery</h3>
-                        <p class="p__feture__offer">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p> 
-                    </div>
-                </article>
-                <article class="feture__offer">
-                    <div class="img__feture__offer"><img src="img/discounts.png" alt="discounts"></div>
-                    <div class="content__feture__offer">
-                        <h3 class="h3__feture__offer">Sales & discounts</h3>
-                        <p class="p__feture__offer">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p> 
-                    </div>
-                </article>
-                <article class="feture__offer">
-                    <div class="img__feture__offer"><img src="img/assurance.png" alt="assurance"></div>
-                    <div class="content__feture__offer">
-                        <h3 class="h3__feture__offer">Quality assurance</h3>
-                        <p class="p__feture__offer">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p> 
-                    </div>
-                </article>
-        </div>
+
     </section>
     </div>
+    
     <footer class="footer">
         <div class="footer-top">
         <div class="center content__footer-top">

@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body>
+    <div class="all">
+    <div class="top">
     <header class="header center">
         <div class="header__left">
             <a href="index.html" class="logo">
@@ -45,7 +47,41 @@
             </form>
         </div>
         <div class="header__right">
-           <a class="a__cart" href="cart.html"><img class="img__cart" src="img/cart.png" alt="cart"></a>
+            <div class="cart-header">
+                <a class="a__cart" href="cart.html"><img class="img__cart" src="img/cart.png" alt="cart"></a>
+                <div class="cartblock">
+                    <div class="cartblock-product">
+                        <div class="cartblock-product__1">
+                            <div class="cartblock-product__1__item">
+                            <a href="single.html" class="cartblock-product__1__link"><img src="img/product-cart1.png" alt="product"></a>
+                            <div class="cartblock-product__1__info">
+                                <a href="single.html" class="cartblock-product__1__info__name">Rebox Zane</a>
+                                <a href="#" class="cartblock-product__1__info__star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></a>
+                                <p class="cartblock-product__1__info__prise">1 x $250</p>
+                            </div>
+                            </div>
+                            <div class="table__action"><a href="#" class="table__action__button"><i class="fa fa-times table__action__button__i"></i></a></div>
+                         </div>
+                        <div class="cartblock-product__1">
+                                <div class="cartblock-product__1__item">
+                                    <a href="single.html" class="cartblock-product__1__link"><img src="img/product-cart2.png" alt="product"></a>
+                                    <div class="cartblock-product__1__info">
+                                        <a href="single.html" class="cartblock-product__1__info__name">Rebox Zane</a>
+                                        <a href="#" class="cartblock-product__1__info__star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></a>
+                                        <p class="cartblock-product__1__info__prise">1 x $250</p>
+                                    </div>
+                                    </div>
+                            <div class="table__action"><a href="#" class="table__action__button"><i class="fa fa-times table__action__button__i"></i></a></div>
+                        </div>
+                    </div>
+                        <div class="cartblock__total">
+                            <p>TOTAL</p>
+                            <p>$500.00</p>
+                        </div>
+                    <a href="checkout.html" class="cartblock__checkout">Checkout</a>
+                    <a href="cart.html" class="cartblock__checkout">Go to cart</a>
+                </div>
+           </div>
            <a class="button" href="#">My account</a>
         </div>
     </header>
@@ -130,7 +166,7 @@
             <div class="billing">CONTENT</div>
         </details>
     </div>
-    
+    </div>
     <footer class="footer">
         <div class="footer-top">
         <div class="center content__footer-top">
@@ -210,5 +246,6 @@
         </div>
 
     </footer>
+    </div>
 </body>
 </html>

@@ -9,6 +9,7 @@
 @import "product"
 @import "cart"
 @import "checkout"
+@import "single"
 
     
 .center 
@@ -19,6 +20,12 @@ a
 
 body 
     font-family: 'Lato'
+
+.all
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 100vh
 
 .header 
     height: 100px
@@ -136,6 +143,113 @@ body
     &:hover
         transform: scale(1.1)
 
+.cart-header
+    position: relative
+    transition: .3s
+    &:hover .cartblock
+        display: block
+        
+    .cartblock
+        position: absolute
+        width: 262px
+        background-color: #ffffff
+        padding-bottom: 10px
+        display: none
+        border-radius: 5px
+        z-index: 1
+        transition: .3s
+            
+        &-product 
+            margin-top: 35px
+            
+            &__1
+                display: flex
+                align-items: center
+                justify-content: space-between
+                margin: 15px
+                border-bottom: 1px solid #ededed
+                padding-bottom: 15px
+
+                &__item
+                    display: flex
+                    align-items: center
+                    transition-duration: .3s
+                &__link 
+                    margin-right: 15px
+                    transition-duration: .3s
+                    &:hover
+                        transform: scale(1.05)
+                &__info
+                    display: flex
+                    flex-direction: column
+                    &__name
+                        font-size: 12px
+                        font-weight: bold
+                        color: #222222
+                        text-transform: uppercase
+                        transition-duration: .3s
+                        &:hover
+                            transform: scale(1.05)
+                    &__star
+                        font-size: 12px
+                        color: #e4af48
+                        text-transform: uppercase
+                        margin-top: 10px
+                        margin-bottom: 10px
+                        transition-duration: .3s
+                        &:hover
+                            transform: scale(1.05)
+                    &__prise
+                        font-size: 12px
+                        color: #f16d7f
+                        text-transform: uppercase
+
+        &__total
+            display: flex
+            justify-content: space-between
+            margin: 20px 15px
+            font-size: 16px
+            font-weight: bold
+            color: #222222
+            text-transform: uppercase
+        &__checkout
+            height: 50px
+            background-color: #ffffff
+            border: 1px solid #eaeaea
+            display: block
+            margin: 10px 15px
+            font-size: 14px
+            font-weight: bold
+            color: #4a4a4a
+            text-transform: uppercase
+            line-height: 50px
+            text-align: center
+            transition-duration: .3s
+            &:hover
+                color: $color-site
+                border-color: $color-site
+
+
+.table__action
+    &__button
+        border: 1px solid #c0c0c0
+        height: 16px
+        width: 16px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        background-color:#c0c0c0
+        font-size: 12px
+        transition-duration: .3s
+        &:hover
+            background-color: #f16d7f
+            border-color: #f16d7f
+        &__i
+            font-size: 12px;
+            color: white
+            line-height: 16px
+
 
 .text__form 
     display: inline-block
@@ -147,7 +261,9 @@ body
     font-weight: 300
     color: #a4a4a4
     letter-spacing: 0.03em
-    text-indent: 16px
+    padding-left: 16px
+    padding-right: 16px
+    outline: none
 
 .button__form 
     display: flex
@@ -158,6 +274,7 @@ body
     background: none
     justify-content: center
     align-items: center
+    transition-duration: .3s
     &:hover 
             border: 1px solid black
 
@@ -175,6 +292,7 @@ body
     box-shadow: 0px 0px 10px 0px #ececec
     border-radius: 3px
     padding: 0px 20px
+    transition-duration: .3s
     &:hover
         background-color: white
         color:  $color-site
@@ -194,6 +312,7 @@ body
         font-weight: bold
         color: #222222
         text-transform: uppercase
+        transition-duration: .3s
         &:hover 
             border-bottom: 3px solid $color-site
 
@@ -334,6 +453,7 @@ body
     width: 263px
     margin-bottom: 39px
     position: relative
+    transition: .3s
 
 
 .product-box 
@@ -359,7 +479,8 @@ body
 
 
 .product__img 
-    width: 100%
+    width: 261px
+    height: 280px
 
 
 .product__name 
@@ -389,6 +510,7 @@ body
     position: absolute
     top: 97px
     left: 70px
+    transition: .3s
 
 
 .product__add:hover 
@@ -402,6 +524,7 @@ body
     display: flex
     height: 529px
     margin-top: 113px
+    margin-bottom: 97px
 
 .banner__offer 
     width: 767px
@@ -462,7 +585,8 @@ body
     height: 438px
     background-image: url(img/footer-back.png), url(img/2196.png)
     background-blend-mode: overlay
-    margin-top: 97px
+    background-repeat: no-repeat
+    background-position: center
     .content__footer-top 
         display: flex
         justify-content: space-between
@@ -522,7 +646,9 @@ body
     border-top-left-radius: 23px
     border-bottom-left-radius: 23px
     border: none
-    text-indent: 28px
+    padding-left: 28px
+    padding-right: 28px
+    outline: none
 
 
 .button__footer__form 
@@ -620,6 +746,7 @@ body
     margin-left: 8px
     justify-content: center
     align-items: center
+    transition-duration: .3s
     &:hover
         background-color: $color-site
         color: white
